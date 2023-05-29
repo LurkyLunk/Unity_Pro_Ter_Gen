@@ -22,6 +22,10 @@ This is a terrain generator project that allows you to create dynamic terrains i
 5. Select and drag the following scripts from the **Terrain** folder onto your terrain object in the Unity Scene view:
    - `TerrainGenerator.cs`
    - `TerrainController.cs`
+   - `WaterAnimators.cs`
+   - `CloudManager.cs`
+   - `CloudController.cs`
+   - `TextureCreatorWindow.cs`
 
 6. Assign the required assets to the terrain object:
    - Assign a terrain material by dragging and dropping it onto the terrain object's Renderer component.
@@ -44,4 +48,22 @@ This is a terrain generator project that allows you to create dynamic terrains i
     - Configure the water animation parameters exposed in the **Inspector** window of the Water Animators script to achieve desired water effects like waves, ripples, or reflections.
 
 11. Press the **Apply** button in Unity **Inspector** to see the generated terrain in action.
+
+## Texture Creator Window
+
+The Texture Creator Window script provides a user-friendly interface within the Unity Editor to create heightmap noises for your terrains.
+
+### Instructions
+
+1. Ensure that you have already completed the initial setup steps mentioned in the previous sections.
+
+2. To access the Texture Creator Window, follow these steps:
+   - In the Unity Editor, navigate to **Window > Texture Creator** to open the Texture Creator Window.
+
+3. Use the controls provided in the Texture Creator Window to customize and generate heightmap noises:
+   - Adjust sliders, buttons, or input fields to modify properties such as frequency, amplitude, octaves, and persistence.
+   - Explore different noise algorithms, such as Perlin, Simplex, or Worley, to create unique heightmap variations.
+   - Preview the generated noise by clicking on the **Preview** button within the Texture Creator Window.
+
+4. Once you are satisfied with the generated heightmap noise, click on the **Apply** or **Save** button within the Texture Creator Window to apply the noise to the terrain or save it as an image file for later use.
 
